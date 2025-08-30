@@ -42,9 +42,7 @@ const RatingComponent = () => {
       });
     setRoundButtons(newRoundButtons);
   };
-  const onSubmitClickHandler = (event: Event) => {
-    event.preventDefault();
-
+  const onSubmitClickHandler = () => {
     const selectedButtonValue = roundButtons.find(
       (button) => button.isSelected === true
     );

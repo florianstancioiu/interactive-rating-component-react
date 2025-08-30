@@ -37,7 +37,8 @@ describe("<ThankYouCard> component", () => {
   test("select the number 3 and click submit", async () => {
     render(<RatingCard />);
 
-    const buttonElement3 = screen.getByTestId("round-button-rating-3");
+    const buttonElement3 = screen.getByTestId("round-button-rating-3")
+      .children[0];
     const submitElement = screen.getByTestId("rating-card-submit");
 
     fireEvent.click(buttonElement3);
