@@ -23,5 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "types": ["node", "jest", "@testing-library/jest-dom"],
+  "include": ["src", "setupTests.js"]
 }
