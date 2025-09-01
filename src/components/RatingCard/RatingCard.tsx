@@ -42,6 +42,7 @@ const RatingComponent = () => {
       });
     setRoundButtons(newRoundButtons);
   };
+
   const onSubmitClickHandler = () => {
     const selectedButtonValue = roundButtons.find(
       (button) => button.isSelected === true
@@ -70,7 +71,7 @@ const RatingComponent = () => {
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <div className="ratings-wrapper">
+          <ul className="ratings-wrapper">
             {roundButtons.map((roundButton, index) => (
               <RoundButton
                 onSelect={roundButtonOnSelectHandler}
@@ -79,7 +80,7 @@ const RatingComponent = () => {
                 value={roundButton.value}
               />
             ))}
-          </div>
+          </ul>
           <button
             onClick={onSubmitClickHandler}
             className="button"

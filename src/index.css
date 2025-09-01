@@ -41,6 +41,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 26px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .ratings-wrapper .rating {
@@ -52,17 +54,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 
 .ratings-wrapper .rating.selected {
   color: white;
-  background-color: #7c8898;
+  background-color: #6c7789;
 }
 
 .ratings-wrapper .rating:hover {
   cursor: pointer;
   color: white;
-  background-color: hsl(25, 97%, 53%);
+  background-color: #c45303;
 }
 
 .button {
@@ -74,12 +77,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  background-color: hsl(25, 97%, 53%);
+  background-color: #c45303;
 }
 
 .button:hover {
   cursor: pointer;
-  color: hsl(25, 97%, 53%);
+  color: #c45303;
   background-color: white;
 }
 

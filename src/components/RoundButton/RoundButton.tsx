@@ -12,15 +12,15 @@ const RoundButton = ({ value, isSelected, onSelect }: RoundButton) => {
   };
 
   return (
-    <div data-testid={`round-button-rating-${value}`}>
-      <div
+    <li data-testid={`round-button-rating-${value}`}>
+      <button
         onClick={onClickHandler}
         className={`rating ${isSelected ? "selected" : ""}`}
         data-testid="round-button-value"
       >
         {value}
-      </div>
-    </div>
+      </button>
+    </li>
   );
 };
 
